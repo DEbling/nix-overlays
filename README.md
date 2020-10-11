@@ -1,3 +1,4 @@
-# overlays
+# nix-overlay
 
-Nixpkgs overlays
+Nixpkgs overlay adding the following packages:
+ - [zimply](https://github.com/kimbauters/ZIMply)
