@@ -22,7 +22,7 @@ let
     ];
   };
 in stdenv.mkDerivation {
-  name = "zimpy";
+  name = "zimply";
   version = "1.1.2";
 
   src = pkgs.writers.writePython3Bin "zimply" { libraries = [ zimply-lib ]; } ''
