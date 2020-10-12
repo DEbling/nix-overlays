@@ -49,4 +49,11 @@ in stdenv.mkDerivation {
   buildInpus = [ zimply-lib ];
 
   installPhase = "install -m755 -Dt $out/bin bin/zimply";
+
+  meta = with stdenv.lib; {
+    description = "An easy to use offline reader for ZIM files right in your browser";
+    homepage = "https://github.com/kimbauters/ZIMply";
+    license = licenses.mit;
+    platforms = platforms.all;
+  };
 }

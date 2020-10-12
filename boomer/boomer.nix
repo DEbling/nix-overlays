@@ -39,4 +39,11 @@ in stdenv.mkDerivation {
     libPath =
       lib.makeLibraryPath [ stdenv.cc.cc.lib xorg.libX11 xorg.libXrandr libGL ];
   in "patchelf --set-rpath ${libPath} $out/bin/boomer";
+
+  meta = with stdenv.lib; {
+    description = "Zoomer application for Linux.";
+    homepage = "https://github.com/tsoding/boomer";
+    license = licenses.mit;
+    platforms = platforms.linux;
+  };
 }
